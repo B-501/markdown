@@ -1,4 +1,4 @@
-# Router on Linux
+# How to use a linux like a router
 
 ## Router Configuration
 
