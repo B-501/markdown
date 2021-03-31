@@ -2,10 +2,22 @@
 
 ## Router Configuration
 
-- configure ip_forward value to 1
+- add a line to sysctl.conf
 
     ```bash
-    sysctl -w net.ipv4.ip_forward=1
+    vi /etc/sysctl.conf
+    ```
+
+    ```bash
+    # ...
+    
+    net.ipv4.ip_forward = 1
+    ```
+
+- apply a configuration
+
+    ```bash
+    sysctl -p
     ```
 
 - check the ip_forward value, the value is 1
